@@ -242,8 +242,7 @@ This should be in your `AppDelegate` and wherever you want to send a custom even
 [Reblaze startWith:@"<YOUR-APP-DOMAIN>"
             secret:@"<YOUR-SECRET>"
        header_name:@"<YOUR-USER-KEY-NAME>"
-      header_value:@"<YOUR-USER-KEY-VALUE>"
-    shouldShowLogs:YES];
+      header_value:@"<YOUR-USER-KEY-VALUE>"];
 ```
 
 `application:didFinishLaunchingWithOptions` is a good location for this.

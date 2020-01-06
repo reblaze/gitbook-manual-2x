@@ -85,13 +85,13 @@ With Reblaze, you can either upload an existing certificate into Reblaze, or you
 ### **Adding an existing SSL Certificate to Reblaze**
 
 1. Add your certificate as explained under [SSL Management](product-walkthrough/settings/ssl-management.md). 
-2. Copy the relevant details under [DNS](product-walkthrough/settings/dns.md) section, and redirect your traffic through Reblaze. 
+2. Copy the relevant details from the [DNS](product-walkthrough/settings/dns.md) section, and redirect your traffic through Reblaze. \(DNS setup varies widely depending on your current configuration, and this Manual cannot discuss every permutation. [Contact support](support.md) if you need assistance with this.\)
 3. Go back to "Planet Overview" and publish your changes as explained previously.  
 4. Welcome to Reblaze!
 
 ### Generating a new SSL Certificate
 
-1. Copy the relevant details under [DNS](product-walkthrough/settings/dns.md) section, and redirect your traffic through Reblaze. 
+1. Copy the relevant details from the [DNS](product-walkthrough/settings/dns.md) section, and redirect your traffic through Reblaze. \(DNS setup varies widely depending on your current configuration, and this Manual cannot discuss every permutation. [Contact support](support.md) if you need assistance with this.\)
 2. Create a certificate using the "Gen Cert" button in the [Planet Overview](product-walkthrough/settings/planet-overview.md#generates-new-certificate) section \(see image below\).
 3. In the Planet Overview section, publish your changes as explained previously.
 4. Welcome to Reblaze!
