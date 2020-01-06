@@ -33,3 +33,11 @@ The code snippet can go into the header or the footer. **The best practice is to
 
 To test the implementation, use a browser to visit a page containing the Javascript snippet. Once it runs, the browser should have a cookie named **rbzid**.
 
+## Disabling Active Challenges
+
+If you wish to turn off Active Challenges, remove the default "**Deny Bot**" [ACL Policy](../../product-walkthrough/security/profiles/acl-policies.md) from all active [Profiles](../../product-walkthrough/security/profiles/).
+
+{% hint style="danger" %}
+**If you have not enabled Passive Challenges** \(and successfully tested them\), this is not recommended.
+{% endhint %}
+
