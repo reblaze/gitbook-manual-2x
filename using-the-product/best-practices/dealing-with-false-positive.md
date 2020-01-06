@@ -28,7 +28,7 @@ Sometimes the View Log is used to answer a specific question about a request or 
 
 Let's discuss the latter scenario \(a general exploration\). Because the View Log shows all requests, it can be overwhelming. It's helpful to start by excluding requests that aren't as relevant to your current purpose. Examples:
 
-* **Blocked requests**: `is:blocked` \(to show only blocked requests\) or `reason:challenge` \(to show only challenges\).
+* **Passed requests**: `is:blocked` \(to show only blocked requests\) or `reason:challenge` \(to show only challenges\).
 * **Health monitor checks**:  `url:!/health.htm` \[the URL defined for the [Health Monitor](../../product-walkthrough/settings/planet-overview.md#configuring-health-monitoring)\] 
 * **Requests being rejected by the origin** \(i.e., the upstream server\): `reason:!by origin`
 * **Requests from a banned IP**: `ip:!1.2.3.4 .` Another approach: `reason:!autoban/etc.`

@@ -96,7 +96,7 @@ Passive challenges have two primary benefits:
 * They enable much more powerful bot detection.
 * They can replace active challenges, which in some circumstances, can adversely affect certain statistics in metrics such as those provided by Google Analytics.
 
-To learn more about passive challenges, go here:
+To learn more about passive challenges, go here: [Enabling passive challanges ](../../using-the-product/best-practices/enabling-passive-challenges.md)
 
 
 
