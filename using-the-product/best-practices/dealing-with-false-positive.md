@@ -101,7 +101,7 @@ There are some situations where a request is blocked even though Reblaze has no 
 
 Example: a web user visited a landing page, entered contact details into a form, and then tried to proceed to the next page. However, the request to proceed was blocked. 
 
-This could be a FP due to "junk input." Perhaps the user entered a phone number of "2222222222" and it was rejected by the upstream application. Or perhaps the page itself autocompleted a field and inadvertently created junk input on its own.
+This could be a FP due to "junk input." Perhaps the user entered a phone number of "1111111111" and it was rejected by the upstream application. Or perhaps the page itself autocompleted a field and inadvertently created junk input on its own.
 
 #### Is this a FP that resulted from faulty or too-restrictive parameters within Reblaze?
 
@@ -115,7 +115,7 @@ Looking up the custom signature shows that its "**Is matching with**" condition 
 
 `(?i)(select|create|drop|\<|>|alert)\W`
 
-The Reblaze admin wrote this regex in order to identify SQL injection attempts \(i.e, SELECT, CREATE, and DROP commands\).
+The admin wrote this regex in order to identify SQL injection attempts \(i.e, SELECT, CREATE, and DROP commands\).
 
 Now let's examine one of the blocked requests in the View Log. Its Capture Vector is this:
 
@@ -125,7 +125,7 @@ This can be decoded with a tool such as [http://0xcc.net/jsescape/](http://0xcc.
 
 `https://www.pinterest.com/pin/create/button/?url=https://example.com/pitbull-2012?rt=storefront&rp=pitbull&rn=Pitbull&s=hanes-S04V&c=Black&p=FRONT&amp;media=&amp;description=`
 
-Now let's see how the regex condition matched the request. On [https://www.debuggex.com/](https://www.debuggex.com/), it's possible to paste in regex and a string, and see if/where a match occurs.
+Now let's see why the regex condition matched the request. On [https://www.debuggex.com/](https://www.debuggex.com/), it's possible to paste in regex and a string, and see if/where a match occurs.
 
 ![The result from deguggex.com](../../.gitbook/assets/screenshot-2020-01-05-16.34.53.png)
 
