@@ -16,7 +16,7 @@ This decision-making is done in several stages.
 | **Static Rules and Rate Limits** | Requests that do not conform to specified size, time, and rate limits are blocked. More information: [Static Rules](static-rules.md) |
 | **ACLs** | Filtering based on [Access Control Lists](profiles/acl-policies.md), including [Custom Signatures](profiles/acl-policies.md#custom-signature). |
 | **Rate Limits** | Enforces rate limits defined for specific locations/resources within the planet. More information: [Setting Rate Limits for a Location](../settings/web-proxy/security-profiles.md#setting-rate-limits-for-a-location). |
-| **Challenges** | Verifies that requests are coming from humans. More information: [The  Challenge Process](../reblaze-traffic/traffic-concepts.md#the-challenge-process). |
+| **Challenges** | Verifies that requests are coming from humans. More information: [The Challenge Process](../reblaze-traffic/traffic-concepts.md#the-challenge-process). |
 | **WAF/IPS Policies** | Requires requests to conform to the [WAF/IPS Policy](profiles/waf-ips-policies.md) settings. |
 | **Content Filtering** | Blocks requests that do not conform to specified rulesets for required or disallowed content. More information: [Filtering on Content](../../using-the-product/how-do-i.../filter-by-content.md). |
 

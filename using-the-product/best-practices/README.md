@@ -8,8 +8,6 @@ This section describes best practices for some common tasks.
 
 {% page-ref page="dealing-with-false-positive.md" %}
 
-{% page-ref page="enabling-passive-challenges.md" %}
-
 
 
 
