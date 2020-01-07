@@ -28,11 +28,11 @@ Sometimes the View Log is used to answer a specific question about a request or 
 
 Let's discuss the latter scenario \(a general exploration\). Because the View Log shows all requests, it can be overwhelming. It's helpful to start by excluding requests that aren't as relevant to your current purpose. Examples:
 
-* **Passed requests**: `is:blocked` \(to show only blocked requests\) or `reason:challenge` \(to show only challenges\).
-* **Health monitor checks**:  `url:!/health.htm` \[the URL defined for the [Health Monitor](../../product-walkthrough/settings/planet-overview.md#configuring-health-monitoring)\] 
-* **Requests being rejected by the origin** \(i.e., the upstream server\): `reason:!by origin`
-* **Requests from a banned IP**: `ip:!1.2.3.4 .` Another approach: `reason:!autoban/etc.`
-* **Requests that are obviously invalid**, e.g. those with unrecognized host headers.
+* **Show only blocked requests or challenges**: `is:blocked` \(to show only blocked requests\) or `reason:challenge` \(to show only challenges\).
+* **Exclude health monitor checks**:  `url:!/health.htm` \[the URL defined for the [Health Monitor](../../product-walkthrough/settings/planet-overview.md#configuring-health-monitoring)\] 
+* **Exclude requests being rejected by the origin** \(i.e., the upstream server\): `reason:!by origin`
+* **Exclude requests from a banned IP**: `ip:!1.2.3.4 .` Another approach: `reason:!autoban/etc.`
+* **Exclude requests that are obviously invalid**, e.g. those with unrecognized host headers.
 
 Eventually, you can filter the display down to a list of challenges or blocked requests that might produce some insights.
 
@@ -92,7 +92,7 @@ Conversely, if multiple requestors are being blocked, and they seem to be innocu
 
 #### Is the block being done by Reblaze, or is it coming from elsewhere?
 
-There are some situations where a request is blocked even though Reblaze has no obvious reason to be blocking it. This occurs because Reblaze is not actually the entity making the decision.
+There are some situations where a request is blocked even though Reblaze has no obvious reason to be blocking it. This can occur when Reblaze is not actually the entity making the decision.
 
 * **The upstream server can reject requests**. These requests can be displayed in the View Log with`reason:by origin` as the filter. 
 * **Reblaze can use ACLs with external sources of information**, e.g. Spamhaus. **Example**: a request is blocked with a reason of `acl-ip`.  The reason indicates a Reblaze ACL blocked the request because of its IP—but what if you didn't configure any ACLs to reject specific IPs? The answer is that there are several ACLs which rely on external lists of hostile IPs, such as Spamhaus DROP and eDrop.
