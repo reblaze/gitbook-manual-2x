@@ -41,7 +41,7 @@ Each of these fields is explained further below.
 The Operation field has three possible values:
 
 * **Bypass**: the requestor will be granted access to the requested resource, without further evaluation or filtering of the request. However, although a Bypassed request will not be subject to further filtering, it will still show up in the logs \(as “reason:bypassed”\).
-* **Allow**: the requestor will be granted access to the requested resource
+* **Allow**: the requestor will not be presented with a challenge, but will still be evaluated by the WAF.
 * **Deny**: the requestor will not be allowed to access to the requested resource
 
 When constructing an ACL Policy from multiple Rules, the Rules are arranged in the hierarchy shown above \(Bypass, then Allow, then Deny\). Rules are evaluated in order from top to bottom. When a Rule resolves to an action, that action is implemented, and further evaluation ceases.

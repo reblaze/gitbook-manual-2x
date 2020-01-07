@@ -35,7 +35,6 @@ When Reblaze receives the first request from a previously unknown traffic source
 2. If the challenge is not passed, the request is deemed to be a bot, and if Reblaze has been configured to reject bot traffic, the request is blocked. Nothing more happens.
 3. If the challenge is passed, the browser's session is authenticated, and the browser receives cookies from Reblaze.
 4. The browser then automatically resubmits the original request, but this time, the cookies are included. The user is granted access to the requested URL, resources, etc.
-5. Subsequent requests will also include the cookies, and thus, they are not challenged.
 
 This process happens quickly \(in a few milliseconds\), and is **invisible** to the user.  
 
@@ -90,14 +89,14 @@ When working with Reblaze's traffic statistics, the following relationships can 
 
 The process described on this page is the **active** challenge process. Out of the box, this is the challenge process that Reblaze uses.
 
-We recommend that if possible, customers also enable the **passive** challenge process. 
+We recommend that if possible, customers switch to the **passive** challenge process instead. 
 
 Passive challenges have two primary benefits:
 
 * They enable much more powerful bot detection.
 * They can replace active challenges, which in some circumstances, can adversely affect certain statistics in metrics such as those provided by Google Analytics.
 
-To learn more about passive challenges, go here: [Enabling passive challanges ](../../using-the-product/best-practices/enabling-passive-challenges.md)
+To learn more about passive challenges, go here:
 
 
 
