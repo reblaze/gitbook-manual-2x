@@ -160,7 +160,9 @@ The **Client’s IP Header Name \(Upstream Side\)** setting defines how Reblaze 
 | Field name | Description |
 | :--- | :--- |
 | RBZ-GEO-Country | Client's country |
-| RBZ-GEO-CountryCode | Abbreviation of client's country |
+| RBZ-GEO-City | Client's city |
+| RBZ-GEO-Long | Client's longitude |
+| RBZ-GEO-Lat | Client's latitude |
 | RBZ-ORG | Client's organization |
 | RBZ-REGION | Client's region |
 

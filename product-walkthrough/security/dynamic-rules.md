@@ -186,8 +186,8 @@ Some of the matches rely on the results of [ACL Policies](profiles/acl-policies.
 | **IP** | The IP Address. |
 | **Complete URL** | URL with the query string. |
 | **URI** | URI |
-| **Request Body** | The name of a field and its value, separated by a space. |
-| **Request**  **Headers**  | The name of a field and its value, separated by a space. |
+| **Request Body** | Text boxes will appear for "Name" and "Value" parameters. Both can be regex. |
+| **Request**  **Headers**  | Text boxes will appear for "Name" and "Value" parameters. Both can be regex. |
 | **Response Status** | HTTP response code \(200, 404 etc.\). |
 | **User Agent** | The request's user agent name. |
 
