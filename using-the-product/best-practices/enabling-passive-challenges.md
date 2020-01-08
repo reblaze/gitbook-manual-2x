@@ -26,12 +26,26 @@ Implementing Passive Challenges is simple. Place this Javascript code within the
 ```
 
 {% hint style="info" %}
-The code snippet can go into the header or the footer. **The best practice is to place it within the header.** This ensures that subsequent calls contain authenticating cookies.
+The code snippet can go into the header or at the end of the page. **The best practice is to place it within the header.** This ensures that subsequent calls contain authenticating cookies.
+
+Note that this only matters for the first page served to a visitor. Subsequent pages will already have the authenticating cookies to include with their requests.
 {% endhint %}
 
 {% hint style="info" %}
 **Most customers set up the code snippet as a tag within their tag manager.** This makes it simple to install it instantly across their entire site/application.
 {% endhint %}
+
+If desired, the script code can include `async` or `defer`:
+
+```text
+<script async src="/c3650cdf-216a-4ba2-80b0-9d6c540b105e58d2670b-ea0f-484e-b88c-0e2c1499ec9bd71e4b42-8570-44e3-89b6-845326fa43b6" type="text/javascript"></script>
+```
+
+```text
+<script defer src="/c3650cdf-216a-4ba2-80b0-9d6c540b105e58d2670b-ea0f-484e-b88c-0e2c1499ec9bd71e4b42-8570-44e3-89b6-845326fa43b6" type="text/javascript"></script>
+```
+
+Including async will 
 
 ## Testing
 
