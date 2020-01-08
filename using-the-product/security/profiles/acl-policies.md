@@ -4,7 +4,7 @@ description: Access Control List Policies
 
 # ACL Policies
 
-The ACL Policies section allows you to define [Policies and Rules](profile-concepts.md) by which Reblaze will scrub your incoming traffic. Once the Policies have been defined, they are assigned to specific resources \(e.g., a section of your website\) in the [Web Proxy](../../settings/web-proxy/) section.
+The ACL Policies section allows you to define [Policies and Rules](profile-concepts.md) by which Reblaze will scrub your incoming traffic. Once the Policies have been defined, they are assigned to specific resources \(e.g., a section of your website\) in the [Web Proxy](../../../product-walkthrough/settings/web-proxy/) section.
 
 In the discussion below, "ACL" and "ACL Policy" refer to the same thing: the Policies that can be administered in this section. 
 
@@ -41,7 +41,7 @@ Each of these fields is explained further below.
 The Operation field has three possible values:
 
 * **Bypass**: the requestor will be granted access to the requested resource, without further evaluation or filtering of the request. However, although a Bypassed request will not be subject to further filtering, it will still show up in the logs \(as “reason:bypassed”\).
-* **Allow**: the requestor will be granted access to the requested resource
+* **Allow**: the requestor will not be presented with a challenge, but will still be evaluated by the WAF.
 * **Deny**: the requestor will not be allowed to access to the requested resource
 
 When constructing an ACL Policy from multiple Rules, the Rules are arranged in the hierarchy shown above \(Bypass, then Allow, then Deny\). Rules are evaluated in order from top to bottom. When a Rule resolves to an action, that action is implemented, and further evaluation ceases.
@@ -97,7 +97,7 @@ By adding the following characters as a suffix to the ACL's name, the ACL will b
 | **OC** | Over-capacity override: ignore [Static Rules](../static-rules.md) rate limits. | Loadtest OC |
 | **XDeny** | "God Mode": bypass the Rule Operation hierarchy. | Global DR XDeny |
 
-For an example of using the OC suffix, see [Bypassing Rate Limits for Loadtesting](../../../using-the-product/how-do-i.../bypassing-rate-limits-for-loadtesting.md).
+For an example of using the OC suffix, see [Bypassing Rate Limits for Loadtesting](../../how-do-i.../bypassing-rate-limits-for-loadtesting.md).
 
-For an example of using XDeny, see [Quickly Blocking an Attacker](../../../using-the-product/how-do-i.../quickly-blocking-an-attacker.md).
+For an example of using XDeny, see [Quickly Blocking an Attacker](../../how-do-i.../quickly-blocking-an-attacker.md).
 
