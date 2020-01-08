@@ -39,13 +39,33 @@ To test the implementation, use a browser to visit a page containing the Javascr
 
 ## Disabling Active Challenges \(Optional\)
 
-If you wish to turn off Active Challenges, remove the default "**Deny Bot**" [ACL Policy](../../product-walkthrough/security/profiles/acl-policies.md) from all active [Profiles](../../product-walkthrough/security/profiles/).
+There are two primary situations where customers sometimes want to disable Active Challenges:
+
+* **When a customer needs site analytics** to correctly reflect all referers and so on. \(Active Challenges can interfere with this.\)
+* **For API endpoints**. Active Challenges are designed to verify the client's browser environment; for most API calls, there is no browser environment to verify. \(For users of our [Mobile SDK](../reblaze-api-1/mobile-sdk.md), this is not a problem. They can still use active challenges for these endpoints.\)
+
+Other than those situations, Active Challenges can be very beneficial.
 
 {% hint style="info" %}
-This will turn off the direct blocking of bots \(where a requestor is blocked merely for being identified as a bot\). However, automated traffic will still be excluded via all other relevant means: the active [ACL Policies](../../product-walkthrough/security/profiles/acl-policies.md), [Dynamic Rules](../../product-walkthrough/security/dynamic-rules.md), [content filtering](../how-do-i.../filter-by-content.md), and so on.
+**We recommend that you keep Active Challenges enabled if possible.** They automatically eliminate almost all DDoS traffic, scanning tools, and other hostile bot traffic.
 {% endhint %}
+
+If you wish to turn off Active Challenges, do the following.
+
+* **For specific URLs/locations:** remove the default "**Deny Bot**" [ACL Policy](../../product-walkthrough/security/profiles/acl-policies.md) from all [Profiles](../../product-walkthrough/security/profiles/) that are assigned to those locations.
+* **For specific traffic sources:** Add an ACL Policy that will 'Allow' those specific requestors. The requestors should be defined as narrowly as possible.
+
+{% hint style="info" %}
+This will turn off the direct blocking of bots \(where a requestor is blocked merely for being identified as a bot\). However, automated traffic will still be excluded via all other relevant means. 
+{% endhint %}
+
+
+
+If you merely removed the Deny Bot ACL Policy from active Profiles, then bots will still be excluded by the other active [ACL Policies](../../product-walkthrough/security/profiles/acl-policies.md), [Dynamic Rules](../../product-walkthrough/security/dynamic-rules.md), [content filtering](../how-do-i.../filter-by-content.md), and so on. If instead you added an "Allow" ACL Policy to specific requestors, those requestors will be exempted from the other ACL Policies.
 
 {% hint style="danger" %}
 **If you have not enabled Passive Challenges** \(and successfully tested them\), disabling Active Challenges is not recommended.
 {% endhint %}
+
+
 

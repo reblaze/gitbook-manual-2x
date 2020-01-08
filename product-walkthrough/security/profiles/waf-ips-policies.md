@@ -25,7 +25,7 @@ The next three modules are optional, but are recommended in most situations:
 
 | **Parameter** | Functionality |
 | :--- | :--- |
-| **Bad Robots** | Identifies and blocks malevolent bots, based on their user agents. This works differently than the default **Deny Bot** ACL Policy, which uses active challenges to identify bots. Therefore, when active challenges are disabled, this WAF capability can still be used.  |
+| **Bad Robots** | A default Reblaze deployment includes an ACL Policy to exclude malevolent robots \(such as scanning and penetration tools\). In case this ACL Policy is not actually used in an assigned Profile, the same capabilities are provided here as part of the WAF/IPS.  |
 | **Dual Encoding** | A common penetration technique is to encode a hostile request multiple times, in an attempt to evade detection and filtering. For example, an injection attack might be encoded in binary, and then sent as if it were plain text. Or, different types of encoding might be mixed together in the same request. This module detects and defeats these attempted attacks. |
 | **\* Injection Proof** | This module detects and defeats different kinds of injection attacks: SQL, XSS, and OSC. \(The "\*" is a wildcard.\) |
 
