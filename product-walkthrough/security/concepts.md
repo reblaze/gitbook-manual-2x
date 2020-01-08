@@ -18,6 +18,7 @@ This decision-making is done in several stages.
 | **Rate Limits** | Enforces rate limits defined for specific locations/resources within the planet. More information: [Setting Rate Limits for a Location](../settings/web-proxy/security-profiles.md#setting-rate-limits-for-a-location). |
 | **Challenges** | Verifies that requests are coming from humans. More information: [The Challenge Process](../reblaze-traffic/traffic-concepts.md#the-challenge-process). |
 | **Content Filtering**  | Blocks requests that do not conform to specified rulesets for required or disallowed content. This is the location-based filtering described in [Filtering on Content](../../using-the-product/how-do-i.../filter-by-content.md).  |
+| **Argument Analysis** | Examination of characters in arguments. Depending on configuration, this can exempt a request from WAF filtering, or block the request. More info: [Args Analysis](args-analysis.md). |
 | **WAF/IPS Policies** | Requires requests to conform to the [WAF/IPS Policy](profiles/waf-ips-policies.md) settings. |
 
 Some of the criteria for the decisions are global. In other words, they apply throughout your entire planet. For example, the settings in the [Static Rules](static-rules.md) section are globally applicable, and do not change depending on the context of the request. They will be applied to all traffic for all resources within your planet.

@@ -17,7 +17,7 @@ A more direct method is to [create content filters directly for a location](../.
 
 [Dynamic Rules](../../product-walkthrough/security/dynamic-rules.md) can be used to rate-limit a requestor, based on the content that is requested.
 
-[Args Analysis](../../product-walkthrough/security/args-analysis.md) provides an inverse of content filtering. It allows you to bypass WAF filtering by whitelisting character values for request arguments. 
+[Args Analysis](../../product-walkthrough/security/args-analysis.md) examines the characters found in arguments. Depending on its mode, it can block requests if unexpected characters are found, or pass them on to the WAF for further inspection. It can also act as an inverse content filter; those requests with arguments which contain only whitelisted characters can bypass WAF filtering. 
 
 
 
