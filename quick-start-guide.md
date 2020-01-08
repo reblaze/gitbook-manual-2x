@@ -44,7 +44,7 @@ The Reblaze interface does not offer the ability to create a new site or applica
 
 Once you choose the right domain for your new application, you'll be redirected automatically to the Web Proxy screen, where configurations are made on the selected application. 
 
-There are three settings you'll have to configure:
+There are two settings you'll have to configure, and a third that's optional:
 
 1. Set the IP address of your servers under "Host". 
 
@@ -54,7 +54,7 @@ There are three settings you'll have to configure:
 
 ![Setting up Domain Names](.gitbook/assets/image%20%2859%29.png)
 
-3. Add a command line to redirect all HTTP requests to HTTPS. 
+3. \(Optional\) Add a command line to redirect all HTTP requests to HTTPS. 
 
 ![Command line to redirect all HTTP requests to HTTPS](.gitbook/assets/image%20%2869%29.png)
 
