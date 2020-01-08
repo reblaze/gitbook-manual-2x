@@ -35,7 +35,7 @@ Note that this only matters for the first page served to a visitor. Subsequent p
 **Most customers set up the code snippet as a tag within their tag manager.** This makes it simple to install it instantly across their entire site/application.
 {% endhint %}
 
-If desired, the script code can include `async` or `defer`:
+If desired, the script code can include `async` or `defer` attributes:
 
 ```text
 <script async src="/c3650cdf-216a-4ba2-80b0-9d6c540b105e58d2670b-ea0f-484e-b88c-0e2c1499ec9bd71e4b42-8570-44e3-89b6-845326fa43b6" type="text/javascript"></script>
@@ -45,7 +45,7 @@ If desired, the script code can include `async` or `defer`:
 <script defer src="/c3650cdf-216a-4ba2-80b0-9d6c540b105e58d2670b-ea0f-484e-b88c-0e2c1499ec9bd71e4b42-8570-44e3-89b6-845326fa43b6" type="text/javascript"></script>
 ```
 
-Including async will 
+These usually are not necessary, and their effect will depend on the placement of the script within the page. Their use is left to your discretion.
 
 ## Testing
 
