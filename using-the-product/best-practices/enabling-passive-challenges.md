@@ -39,10 +39,10 @@ To test the implementation, use a browser to visit a page containing the Javascr
 
 ## Disabling Active Challenges \(Optional\)
 
-If you wish to turn off Active Challenges, remove the default "**Deny Bot**" [ACL Policy](../security/profiles/acl-policies.md) from all active [Profiles](../security/profiles/).
+If you wish to turn off Active Challenges, remove the default "**Deny Bot**" [ACL Policy](../../product-walkthrough/security/profiles/acl-policies.md) from all active [Profiles](../../product-walkthrough/security/profiles/).
 
 {% hint style="info" %}
-This will turn off the direct blocking of bots \(where a requestor is blocked merely for being identified as a bot\). However, automated traffic will still be excluded via all other relevant means: the active [ACL Policies](../security/profiles/acl-policies.md), [Dynamic Rules](../security/dynamic-rules.md), [content filtering](../how-do-i.../filter-by-content.md), and so on.
+This will turn off the direct blocking of bots \(where a requestor is blocked merely for being identified as a bot\). However, automated traffic will still be excluded via all other relevant means: the active [ACL Policies](../../product-walkthrough/security/profiles/acl-policies.md), [Dynamic Rules](../../product-walkthrough/security/dynamic-rules.md), [content filtering](../how-do-i.../filter-by-content.md), and so on.
 {% endhint %}
 
 {% hint style="danger" %}

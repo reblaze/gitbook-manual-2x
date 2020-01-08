@@ -108,7 +108,7 @@ Each Dynamic Rule contains the following parameters:
           the violator to the <a href="quarantined.md#simulation-banlist">Quarantined Simulation Banlist</a>.</p>
         <p></p>
         <p><b>Report Only</b> does not actively ban the violator. If this rule has
-          been included within a <a href="../../product-walkthrough/settings/planet-overview.md#notification-and-alert-settings">Notification Group</a>,
+          been included within a <a href="../settings/planet-overview.md#notification-and-alert-settings">Notification Group</a>,
           then the defined notifications will be sent.</p>
       </td>
     </tr>
@@ -209,7 +209,7 @@ There can be multiple Block Reasons OR'd together, e.g.: `autoban|over-capacity`
 
 There are several ways to obtain values for constructing Block Reasons. The first is the list of standard [Reblaze WAF signatures](../../reference-information-1/reblaze-signatures.md) \(example: `Autoban/etc.`\). Other possible values are custom, created dynamically by Reblaze as the result of user configuration. Example: `Rate limit 2/1s` . 
 
-In both cases, recent values can be obtained from individual events in the [View Log](../../product-walkthrough/reblaze-traffic/view-log.md), or from the Signatures tab on the [Dashboard](../../product-walkthrough/reblaze-traffic/dashboard.md) page.
+In both cases, recent values can be obtained from individual events in the [View Log](../reblaze-traffic/view-log.md), or from the Signatures tab on the [Dashboard](../reblaze-traffic/dashboard.md) page.
 
 ![The Signatures tab shows the Block Reasons for recent requests.](../../.gitbook/assets/screenshot-2020-01-03-14.22.34.png)
 

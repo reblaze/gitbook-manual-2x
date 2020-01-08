@@ -97,7 +97,7 @@ At the bottom of the Planet Overview are the Notification Settings.
 
 ![Notification Settings interface](../../.gitbook/assets/planet-overview-notification-settings.png)
 
-When a [Dynamic Rule](../../using-the-product/security/dynamic-rules.md) is violated, Reblaze can send immediate alerts to a list of one or more email addresses, SMS numbers, and hooks \(e.g., Slack\). 
+When a [Dynamic Rule](../security/dynamic-rules.md) is violated, Reblaze can send immediate alerts to a list of one or more email addresses, SMS numbers, and hooks \(e.g., Slack\). 
 
 In addition, a cumulative report of the previous week's violations can be sent to one or more email addresses. 
 

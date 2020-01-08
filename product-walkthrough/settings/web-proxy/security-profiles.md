@@ -7,7 +7,7 @@ description: 'Location-based security settings, and Report Only mode'
 In this section, you can:
 
 * \*\*\*\*[**Define different locations**](security-profiles.md#managing-locations) and/or resources within your planet. For each one, you can:
-  * \*\*\*\*[**Assign a security Profile**](security-profiles.md#assigning-a-security-profile-to-a-location). Profiles are defined [elsewhere](../../../using-the-product/security/profiles/) in the interface: this section is where you assign them and make them active for different locations within your planet.
+  * \*\*\*\*[**Assign a security Profile**](security-profiles.md#assigning-a-security-profile-to-a-location). Profiles are defined [elsewhere](../../security/profiles/) in the interface: this section is where you assign them and make them active for different locations within your planet.
   * \*\*\*\*[**Configure rate limiting**](security-profiles.md#setting-rate-limits-for-a-location) ****\(optional\).
   * \*\*\*\*[**Configure content filtering**](security-profiles.md#content-filtering-for-a-location) ****\(optional\).
 * \*\*\*\*[**Set a site/application into Report Only mode**](security-profiles.md#enabling-report-only-mode) ****\(usually used only for testing\).

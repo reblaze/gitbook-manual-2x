@@ -38,7 +38,7 @@ Eventually, you can filter the display down to a list of challenges or blocked r
 
 From this point, you are looking for possible patterns, or unusual outliers, and considering possible actions to take. For example:
 
-* **Are there a lot of requests for a Wordpress file, but your site does not use Wordpress?** These are coming from malicious traffic sources. It might be useful to set up a [Dynamic Rule](../security/dynamic-rules.md), e.g. to Ban requestors who submit more than one request for that file in a three-minute period.
+* **Are there a lot of requests for a Wordpress file, but your site does not use Wordpress?** These are coming from malicious traffic sources. It might be useful to set up a [Dynamic Rule](../../product-walkthrough/security/dynamic-rules.md), e.g. to Ban requestors who submit more than one request for that file in a three-minute period.
 * **Is the same IP failing multiple challenges?** It might be interesting to filter on that IP only, and go through all of its activity, to see what that traffic source was trying to do. \(You can see that a challenge is being failed when the challenge itself appears in the logs, but it is not followed by a successful request by the IP for the same URI.\)
 * **Are there many blocked requests for the same URI, but from different traffic sources?** This might be a False Positive alarm. See below for more on this.
 
@@ -109,7 +109,7 @@ If requestors are being blocked for violating rate limits, and the rate limits a
 
 Or, perhaps the block is the result of content filtering. This feature is powerful, and it is possible to mistakenly configure it to be too restrictive.
 
-**Example:** requests are being blocked because of a [Custom Signature](../security/profiles/acl-policies.md#custom-signature) \(`reason:acl-custom-sig`\). 
+**Example:** requests are being blocked because of a [Custom Signature](../../product-walkthrough/security/profiles/acl-policies.md#custom-signature) \(`reason:acl-custom-sig`\). 
 
 Looking up the custom signature shows that its "**Is matching with**" condition is the following regex:
 

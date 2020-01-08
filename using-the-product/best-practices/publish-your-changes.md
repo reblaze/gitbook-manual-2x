@@ -24,7 +24,7 @@ Also remember that in almost all cases, Save Changes only saves your changes wit
 
 ## Publishing Your Changes
 
-When editing [Dynamic Rules](../security/dynamic-rules.md), saving your changes will apply them to your planet.
+When editing [Dynamic Rules](../../product-walkthrough/security/dynamic-rules.md), saving your changes will apply them to your planet.
 
 In all other cases, after Saving your changes, you will also need to Publish them, which will push everything to the cloud.
 

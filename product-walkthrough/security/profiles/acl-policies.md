@@ -4,7 +4,7 @@ description: Access Control List Policies
 
 # ACL Policies
 
-The ACL Policies section allows you to define [Policies and Rules](profile-concepts.md) by which Reblaze will scrub your incoming traffic. Once the Policies have been defined, they are assigned to specific resources \(e.g., a section of your website\) in the [Web Proxy](../../../product-walkthrough/settings/web-proxy/) section.
+The ACL Policies section allows you to define [Policies and Rules](profile-concepts.md) by which Reblaze will scrub your incoming traffic. Once the Policies have been defined, they are assigned to specific resources \(e.g., a section of your website\) in the [Web Proxy](../../settings/web-proxy/) section.
 
 In the discussion below, "ACL" and "ACL Policy" refer to the same thing: the Policies that can be administered in this section. 
 
@@ -97,7 +97,7 @@ By adding the following characters as a suffix to the ACL's name, the ACL will b
 | **OC** | Over-capacity override: ignore [Static Rules](../static-rules.md) rate limits. | Loadtest OC |
 | **XDeny** | "God Mode": bypass the Rule Operation hierarchy. | Global DR XDeny |
 
-For an example of using the OC suffix, see [Bypassing Rate Limits for Loadtesting](../../how-do-i.../bypassing-rate-limits-for-loadtesting.md).
+For an example of using the OC suffix, see [Bypassing Rate Limits for Loadtesting](../../../using-the-product/how-do-i.../bypassing-rate-limits-for-loadtesting.md).
 
-For an example of using XDeny, see [Quickly Blocking an Attacker](../../how-do-i.../quickly-blocking-an-attacker.md).
+For an example of using XDeny, see [Quickly Blocking an Attacker](../../../using-the-product/how-do-i.../quickly-blocking-an-attacker.md).
 

@@ -7,7 +7,7 @@ description: Constant settings that apply to the entire planet
 This section defines security ruleset parameters that apply to your entire Reblaze planet. They are "static" because they are simple settings, and do not vary according to context or circumstance. 
 
 {% hint style="info" %}
-The settings in this section are global. They apply to all configured sites on the platform, even if the domain is set to ["Report Mode"](../../product-walkthrough/settings/planet-overview.md#editing-a-web-application).
+The settings in this section are global. They apply to all configured sites on the platform, even if the domain is set to ["Report Mode"](../settings/planet-overview.md#editing-a-web-application).
 {% endhint %}
 
 The main page for this section has three tabs: 
