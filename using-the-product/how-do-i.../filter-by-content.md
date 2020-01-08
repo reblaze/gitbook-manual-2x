@@ -13,7 +13,7 @@ A more direct method is to [create content filters directly for a location](../.
 * Both can deny requests based on their content.
 * Location-based filtering is easier to _require_ certain content in incoming requests.
 * Location-based filtering is simpler when setting up different filters for different locations. 
-* Custom Signatures are modular, and can be re-used in multiple places throughout the interface. A location-based filter definition cannot do this. Instead, you have to manually define the filtering conditions for each location.
+* Custom Signatures are modular, and once defined, they can be re-used in multiple places throughout the interface. A location-based filter definition cannot do this. Instead, you have to manually define the filtering conditions for each location.
 
 [Dynamic Rules](../../product-walkthrough/security/dynamic-rules.md) can be used to rate-limit a requestor, based on the content that is requested.
 
