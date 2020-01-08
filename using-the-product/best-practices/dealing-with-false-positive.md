@@ -115,7 +115,7 @@ Looking up the custom signature shows that its "**Is matching with**" condition 
 
 `(?i)(select|create|drop|\<|>|alert)\W`
 
-The admin wrote this regex in order to identify SQL injection attempts \(i.e, SELECT, CREATE, and DROP commands\).
+The admin wrote this regex in order to identify SQL injection attempts \(i.e, SELECT, CREATE, and DROP commands. Normally SQL and code injection attempts are blocked automatically by the WAF, but occasionally customers choose to disable this\).
 
 Now let's examine one of the blocked requests in the View Log. Its Capture Vector is this:
 
