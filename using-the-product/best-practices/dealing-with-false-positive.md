@@ -28,7 +28,7 @@ Sometimes the View Log is used to answer a specific question about a request or 
 
 Let's discuss the latter scenario \(a general exploration\). Because the View Log shows all requests, it can be overwhelming. It's helpful to start by excluding requests that aren't as relevant to your current purpose. Examples:
 
-* **Show only blocked requests or challenges**: `is:blocked` \(to show only blocked requests\) or `reason:challenge` \(to show only challenges\).
+* **Exclude passed requests, and show only the challenges or blocked requests**: `reason:challenge` \(to show only challenges\), or `is:blocked` \(to show only blocked requests\).
 * **Exclude health monitor checks**:  `url:!/health.htm` \[the URL defined for the [Health Monitor](../../product-walkthrough/settings/planet-overview.md#configuring-health-monitoring)\] 
 * **Exclude requests being rejected by the origin** \(i.e., the upstream server\): `reason:!by origin`
 * **Exclude requests from a banned IP**: `ip:!1.2.3.4 .` Another approach: `reason:!autoban/etc.`
@@ -115,7 +115,7 @@ Looking up the custom signature shows that its "**Is matching with**" condition 
 
 `(?i)(select|create|drop|\<|>|alert)\W`
 
-The admin wrote this regex in order to identify SQL injection attempts \(i.e, SELECT, CREATE, and DROP commands\).
+The admin wrote this regex in order to identify SQL injection attempts \(i.e, SELECT, CREATE, and DROP commands. Normally SQL and code injection attempts are blocked automatically by the WAF, but occasionally customers choose to disable this\).
 
 Now let's examine one of the blocked requests in the View Log. Its Capture Vector is this:
 
