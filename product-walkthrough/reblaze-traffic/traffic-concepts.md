@@ -90,14 +90,12 @@ When working with Reblaze's traffic statistics, the following relationships can 
 
 The process described on this page is the **active** challenge process. Out of the box, this is the challenge process that Reblaze uses.
 
-{% hint style="info" %}
-**We recommend that whenever possible, customers also enable** _**passive**_ **challenges.** 
-{% endhint %}
+We recommend that if possible, customers also enable the **passive** challenge process. 
 
 Passive challenges have two primary benefits:
 
-* **They enable Biometric Bot Detection**: a much more powerful means of identifying automated traffic, and an important part of Reblaze's behavioral analysis.
-* In some situations, active challenges can interfere with certain metrics such as those provided by Google Analytics. Passive challenges can replace active challenges, restoring analytics metrics while still enjoying effective bot protection. However, if possible, we recommend that customers use both active and passive challenges.
+* They enable much more powerful bot detection.
+* They can replace active challenges, which in some circumstances, can adversely affect certain statistics in metrics such as those provided by Google Analytics.
 
 To learn more about passive challenges, go here: [Enabling passive challanges ](../../using-the-product/best-practices/enabling-passive-challenges.md)
 
