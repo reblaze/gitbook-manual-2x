@@ -21,7 +21,7 @@ In the screenshots below, IP addresses are censored for privacy reasons.
 The main tool in this section is the Query box for filtering the display; this is quite similar to the one on the Dashboard. It allows you to filter the display and see only the data you wish to analyze. For a full explanation of how to use it, [click here](../../using-the-product/best-practices/reblaze-filter.md). 
 
 {% hint style="info" %}
-The Query box allows you to filter and display specific requests and their details. To show the results graphically, you can copy the filter string and paste it into the Query box on the [Dashboard](dashboard.md).
+The Query box allows you to filter and display specific requests and their details. To show the results graphically instead, you can copy the filter string and paste it into the Query box on the [Dashboard](dashboard.md).
 {% endhint %}
 
 At the top right of the screen, you can choose the application you want to analyze. The drop-down menu allows you to search for and choose your desired application. 
@@ -30,7 +30,7 @@ At the top right of the screen, you can choose the application you want to analy
 
 Next to the Query box, you'll see several buttons. 
 
-* The search icon is for applying the requested filters on the log. \(Or, just hit "Enter" on the keyboard after typng your query.\)
+* The search icon is for applying the requested filters on the log. \(Or, just hit "Enter" on the keyboard after typing your query.\)
 * The calendar button allows you to specify a certain date or period of time.
 * The Search History button displays your recent searches, so you can re-run them without having to enter them completely from scratch.
 * Export to CSV creates a text-based spreadsheet file.
