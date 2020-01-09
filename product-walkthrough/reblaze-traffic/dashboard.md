@@ -36,7 +36,7 @@ Enables the user to select a pre-defined time frame, or a custom time period. Se
 
 ### **Passed vs. Blocked**
 
-This section shows the traffic that was processed by Reblaze: that which was passed through to the upstream servers, and that which was blocked. Hits are distributed by time and sorted into three different categories: Humans, Challenges, and Blocked. As you can see in the example below, the data is shown in different colors to easily distinguish among the categories. 
+This section shows the traffic that was processed by Reblaze: requests which passed through to the upstream servers, and requests that were blocked. Hits are distributed by time and sorted into three different categories: Humans, Challenges, and Blocked. As you can see in the example below, the data is shown in different colors to easily distinguish among the categories. 
 
 ![Passed vs. Blocked Graph](../../.gitbook/assets/image%20%2831%29.png)
 
