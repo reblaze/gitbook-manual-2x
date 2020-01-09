@@ -20,6 +20,10 @@ In the screenshots below, IP addresses are censored for privacy reasons.
 
 The main tool in this section is the Query box for filtering the display; this is quite similar to the one on the Dashboard. It allows you to filter the display and see only the data you wish to analyze. For a full explanation of how to use it, [click here](../../using-the-product/best-practices/reblaze-filter.md). 
 
+{% hint style="info" %}
+The Query box allows you to filter and display specific requests and their details. To show the results graphically, you can copy the filter string and paste it into the Query box on the [Dashboard](dashboard.md).
+{% endhint %}
+
 At the top right of the screen, you can choose the application you want to analyze. The drop-down menu allows you to search for and choose your desired application. 
 
 ![Analyze Traffic Log: Application Drop-down and Filter Box](https://lh5.googleusercontent.com/qyBHNl9vWfym1qQ2B4yWfjpXlPAH8xG3odpqFniO85aTbG2q3mq6bmKJR86j8nInpExtPWE19haS6Ph8kZSDucpwOFT8pcIhL8Q2wfwjDHlrdR_klTYU3k3BIyxaeLF33TbP9a3x)
