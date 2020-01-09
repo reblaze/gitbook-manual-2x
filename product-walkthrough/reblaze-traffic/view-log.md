@@ -48,7 +48,14 @@ Clicking on any log entry will display its details:
 
 ![Log Entry Example](../../.gitbook/assets/image%20%2828%29.png)
 
-The log example above contains the following information \(from left to right\):
+This will reveal:
+
+* The URL that was requested
+* The user agent
+* Optional additional information \(not shown in the example above\), depending on the request. Example: the referrer.
+* A row of colored labels.
+
+In the example above, the colored labels contain the following information \(from left to right\):
 
 1. **HTTP Request Method** \(GET / POST / PUT...\)
 2. **HTTP Version**
