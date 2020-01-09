@@ -31,11 +31,11 @@ The discussion below is for sites and web applications.
 
 When Reblaze receives the first request from a previously unknown traffic source \(below described as the "user"\), this is the typical process that is followed.
 
-1. Reblaze challenges the user's browsing environment. Reblaze uses a variety of proprietary, multi-faceted techniques to verify that this requestor is a human using a browser, instead of a bot using a headless browser or emulator. \(This topic is discussed in some depth in this white paper: [2019 State of Bot Protection](https://www.reblaze.com/resources/white-papers/2019-state-bot-protection/).\)
-2. If the challenge is not passed, the request is deemed to be a bot, and if Reblaze has been configured to reject bot traffic, the request is blocked. Nothing more happens.
-3. If the challenge is passed, the browser's session is authenticated, and the browser receives cookies from Reblaze.
-4. The browser then automatically resubmits the original request, but this time, the cookies are included. The user is granted access to the requested URL, resources, etc.
-5. Subsequent requests will also include the cookies, and thus, they are not challenged.
+1. **Reblaze challenges the user's browsing environment.** Reblaze uses a variety of proprietary, multi-faceted techniques to verify that this requestor is a human using a browser, instead of a bot using a headless browser or emulator. \(This topic is discussed in some depth in this white paper: [2019 State of Bot Protection](https://www.reblaze.com/resources/white-papers/2019-state-bot-protection/).\)
+2. **If the challenge is not passed, the request is deemed to be a bot**, and if Reblaze has been configured to reject bot traffic, the request is blocked. Nothing more happens.
+3. **If the challenge is passed, the browser's session is authenticated**, and the browser receives cookies from Reblaze.
+4. **The browser then automatically resubmits the original request**, but this time, the cookies are included. The user is granted access to the requested URL, resources, etc.
+5. **Subsequent requests will also include the cookies,** and thus, they are not challenged.
 
 This process happens quickly \(in a few milliseconds\), and is **invisible** to the user.  
 
