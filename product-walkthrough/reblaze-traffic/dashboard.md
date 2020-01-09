@@ -27,7 +27,7 @@ For example, to show all traffic from France that was blocked:
 For a full explanation of Reblaze's Query box, including operators and syntax, [go here](https://app.gitbook.com/@reblaze-2/s/product-manual/using-the-product/best-practices/reblaze-filter).
 
 {% hint style="info" %}
-Filters used in the Dashboard will display the results graphically. To see a full list of the requests and their details, you can copy the filter string and paste it into the Query box in the [View Log](view-log.md).
+Queries run in the Dashboard will display the results graphically. To see the results as a full list of the requests and their details, you can copy the filter string and paste it into the Query box in the [View Log](view-log.md).
 {% endhint %}
 
 ### **Time Interval Selection**
