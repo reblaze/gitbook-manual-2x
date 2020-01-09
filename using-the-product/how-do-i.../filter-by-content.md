@@ -11,7 +11,7 @@ There are several ways to filter requests based on their content.
 A more direct method is to [create content filters directly for a location](../../product-walkthrough/settings/web-proxy/security-profiles.md#content-filtering-for-a-location). This too provides powerful filtering capabilities. Here's a comparison between this and Custom Signatures.
 
 * Both can deny requests based on their content.
-* Location-based filtering is easier to _require_ certain content in incoming requests.
+* **Location-based filtering makes it easier to** _**require**_ **certain content in incoming requests.**
 * Location-based filtering is simpler when setting up different filters for different locations. 
 * Custom Signatures are modular, and once defined, they can be re-used in multiple places throughout the interface. A location-based filter definition cannot do this. Instead, you have to manually define the filtering conditions for each location.
 
