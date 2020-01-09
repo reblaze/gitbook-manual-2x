@@ -34,7 +34,7 @@
 
 ## Using the product
 
-* [Best Practices for Common Tasks](using-the-product/best-practices/README.md)
+* [Best Practices](using-the-product/best-practices/README.md)
   * [Saving and Publishing Your Changes](using-the-product/best-practices/publish-your-changes.md)
   * [Enabling Passive Challenges](using-the-product/best-practices/enabling-passive-challenges.md)
   * [Using the Reblaze Query Box](using-the-product/best-practices/reblaze-filter.md)

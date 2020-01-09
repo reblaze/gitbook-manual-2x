@@ -7,7 +7,7 @@ Active Challenges work well, but an even better option is **Passive Challenges**
 * Active Challenges temporarily redirect the user's browser. This can affect site metrics gathered by products such as Google Analytics. 
 * Passive Challenges are simple pieces of Javascript. They do not redirect the user's browser; they merely ask it to solve a challenge, and then insert the Reblaze cookies.
 
-Most importantly, Passive Challenges allow Reblaze to use Biometric Bot Detection—an advanced and sophisticated means of distinguishing humans from automated traffic sources.
+Most importantly, Passive Challenges allow Reblaze to use **Biometric Bot Detection**—an advanced and sophisticated means of distinguishing humans from automated traffic sources.
 
 ## Biometric Bot Detection
 
@@ -28,7 +28,7 @@ Implementing Passive Challenges is simple. Place this Javascript code within the
 {% hint style="info" %}
 The code snippet can go into the header or at the end of the page. **The best practice is to place it within the header.** This ensures that subsequent calls contain authenticating cookies.
 
-Note that this only matters for the first page served to a visitor. Subsequent pages will already have the authenticating cookies to include with their requests.
+\(This matters for the first page served to a visitor. Subsequent pages will already have the authenticating cookies to include with their requests.\)
 {% endhint %}
 
 {% hint style="info" %}
@@ -55,7 +55,7 @@ To test the implementation, use a browser to visit a page containing the Javascr
 
 There are two primary situations where customers sometimes want to disable Active Challenges:
 
-* **When a customer needs site analytics** to correctly reflect all referers and so on. \(Active Challenges can interfere with this.\)
+* **When a customer needs site analytics** to correctly reflect all referrers and so on. \(Active Challenges can interfere with this.\)
 * **For API endpoints**. Active Challenges are designed to verify the client's browser environment; for most API calls, there is no browser environment to verify. \(For users of our [Mobile SDK](../reblaze-api-1/mobile-sdk.md), this is not a problem. They can still use active challenges for these endpoints.\)
 
 Other than those situations, Active Challenges can be very beneficial.
@@ -66,16 +66,15 @@ Other than those situations, Active Challenges can be very beneficial.
 
 If you wish to turn off Active Challenges, do the following.
 
-* **For specific URLs/locations:** remove the default "**Deny Bot**" [ACL Policy](../../product-walkthrough/security/profiles/acl-policies.md) from all [Profiles](../../product-walkthrough/security/profiles/) that are assigned to those locations.
+* **For specific URLs/locations:** remove the default "**Deny Bot**" [ACL Policy](../../product-walkthrough/security/profiles/acl-policies.md) from all [Profiles](../../product-walkthrough/security/profiles/) that are assigned to those locations. 
+* **For an entire site/application**: remove the "**Deny Bot**" ACL Policy from all Profiles within the site.
 * **For specific traffic sources:** Add an ACL Policy that will 'Allow' those specific requestors. The requestors should be defined as narrowly as possible.
 
 {% hint style="info" %}
-This will turn off the direct blocking of bots \(where a requestor is blocked merely for being identified as a bot\). However, automated traffic will still be excluded via all other relevant means. 
+Turning off Active Challenges will disable the direct blocking of bots \(where a requestor is blocked merely for being identified as a bot\). However, automated traffic will still be excluded via all other relevant means. 
 {% endhint %}
 
-
-
-If you merely removed the Deny Bot ACL Policy from active Profiles, then bots will still be excluded by the other active [ACL Policies](../../product-walkthrough/security/profiles/acl-policies.md), [Dynamic Rules](../../product-walkthrough/security/dynamic-rules.md), [content filtering](../how-do-i.../filter-by-content.md), and so on. If instead you added an "Allow" ACL Policy to specific requestors, those requestors will be exempted from the other ACL Policies.
+If you merely removed the Deny Bot ACL Policy from the relevant Profiles, then bots will still be excluded by the other active [ACL Policies](../../product-walkthrough/security/profiles/acl-policies.md), [Dynamic Rules](../../product-walkthrough/security/dynamic-rules.md), [content filtering](../how-do-i.../filter-by-content.md), and so on. If instead you added an "Allow" ACL Policy to specific requestors, then ACL Policies will not do anything will not apply to those requestors; they will be exempted from all ACL Policy filtering.
 
 {% hint style="danger" %}
 **If you have not enabled Passive Challenges** \(and successfully tested them\), disabling Active Challenges is not recommended.
