@@ -32,7 +32,7 @@ The discussion below is for sites and web applications.
 When Reblaze receives the first request from a previously unknown traffic source \(below described as the "user"\), this is the typical process that is followed.
 
 1. **Reblaze challenges the user's browsing environment.** Reblaze uses a variety of proprietary, multi-faceted techniques to verify that this requestor is a human using a browser, instead of a bot using a headless browser or emulator. \(This topic is discussed in some depth in this white paper: [2019 State of Bot Protection](https://www.reblaze.com/resources/white-papers/2019-state-bot-protection/).\)
-2. **If the challenge is not passed, the request is deemed to be a bot**, and if Reblaze has been configured to reject bot traffic, the request is blocked. Nothing more happens.
+2. **If the challenge is not passed, the request is suspected to be a bot, and another challenge is issued.** This process continues until a challenge is passed, or a rejection threshold is reached \(e.g., a Dynamic Rule or Rate Limit\). 
 3. **If the challenge is passed, the browser's session is authenticated**, and the browser receives cookies from Reblaze.
 4. **The browser then automatically resubmits the original request**, but this time, the cookies are included. The user is granted access to the requested URL, resources, etc.
 5. **Subsequent requests will also include the cookies,** and thus, they are not challenged.
@@ -40,7 +40,7 @@ When Reblaze receives the first request from a previously unknown traffic source
 This process happens quickly \(in a few milliseconds\), and is **invisible** to the user.  
 
 {% hint style="info" %}
-As noted above, this is the "typical" process that occurs in normal use. There are a variety of situations in which it might not be followed.  For example, sometimes Reblaze is configured to whitelist certain IP addresses, and not to challenge them. Another example: if Reblaze is in ["Report Only" mode](../settings/web-proxy/security-profiles.md#enabling-report-only-mode), then in step 2, a bot will be reported, but it will not be blocked. 
+As noted above, this is the "typical" process that occurs in normal use. There are a variety of situations in which it might not be followed.  For example, sometimes Reblaze is configured to whitelist certain IP addresses, and not to challenge them. 
 
 The discussion below will be based on the typical process described above.
 {% endhint %}
@@ -49,7 +49,7 @@ The discussion below will be based on the typical process described above.
 
 The process described above will result in the following statistics being incremented.
 
-If the challenge was not passed:
+For each challenge that was not passed:
 
 * **Hits**
 * **Challenge**
@@ -94,10 +94,15 @@ The process described on this page is the **active** challenge process. Out of t
 **We recommend that whenever possible, customers also enable** _**passive**_ **challenges.** 
 {% endhint %}
 
-Passive challenges have two primary benefits:
+Passive challenges have three primary benefits:
 
 * **They enable Biometric Bot Detection**: a much more powerful means of identifying automated traffic, and an important part of Reblaze's behavioral analysis.
-* In some situations, active challenges can interfere with certain metrics such as those provided by Google Analytics. Passive challenges can replace active challenges, restoring analytics metrics while still enjoying effective bot protection. However, if possible, we recommend that customers use both active and passive challenges.
+* **In some situations, active challenges can interfere with certain metrics** such as those provided by Google Analytics. Passive challenges can replace active challenges, restoring analytics metrics while still enjoying effective bot protection. 
+* **When caching is being done by a CDN**, active challenges will not occur for pages being served from the cache. Passive challenges are necessary for Reblaze to perform bot detection in this situation.
+
+{% hint style="info" %}
+**If possible, we recommend that customers use both active and passive challenges.**
+{% endhint %}
 
 To learn more about passive challenges, go here: [Enabling passive challanges ](../../using-the-product/best-practices/enabling-passive-challenges.md)
 
