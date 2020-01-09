@@ -13,15 +13,15 @@ Most third-party services allow code to be embedded into their pages. The follow
 
 ## Enable passive challenges for the page
 
-With one exception \(noted below\), follow the same procedures described here, and apply them to the third-party page: [Enabling Passive Challenges](../best-practices/enabling-passive-challenges.md).
+With one exception \(noted below\), follow the same procedures described in [Enabling Passive Challenges](../best-practices/enabling-passive-challenges.md), and apply them to the third-party page.
 
-**Exception:** instead of including a root-path URL \(`<script src="/c3650cdf…` \), you must include the full path \(`<script src="`[`https://www.example.com/c3650cdf…`](https://www.example.com/c3650cdf…) \).
+**The exception:** instead of including a root-path URL \(`<script src="/c3650cdf…` \), you must include the full path \(`<script src="`[`https://www.example.com/c3650cdf…`](https://www.example.com/c3650cdf…) \).
 
 {% hint style="info" %}
-Note that this is the full path to **your** site, not the third-party domain.
+Note that this is the full path to **your** site, not the domain of the third-party service provider.
 {% endhint %}
 
-## Enable active challenges for the page.
+## Enable active challenges for the page
 
 This is done by including the following code in the page \(ideally, in the page header\):
 
@@ -31,11 +31,11 @@ This is done by including the following code in the page \(ideally, in the page 
 
 Explanation:
 
-* “www.example.com” is your site. It must be the same full path \(and the same subdomain\) as used in the  passive challenge procedure described above. 
+* “www.example.com” is your site. It must be the same full path \(and the same subdomain\) as used in the passive challenge procedure described above. 
 * “pixel-path” is a **non-existent path**. In other words, the overall address won’t actually resolve to a page or resource within your site.
 
-The purpose of this request is not to return a resource or page; it is merely to trigger a call into the domain. The call will trigger an active challenge. 
+The purpose of this request is not to return a resource or page; it is merely to trigger a call into the parent site. The call will trigger an active challenge. 
 
-* If the visitor is a bot, the challenge will fail. Subsequent attempts by the visitor to access the parent site \(e.g., form submission attempts\) will be blocked. 
-* If the visitor is a human, this will result in the web browser receiving Reblaze’s authenticating cookies. Subsequent actions by the visitor within the site will include the cookies, and so the visitor will not be challenged anymore. 
+* **If the visitor is a bot, the challenge will fail.** Subsequent access attempts to the parent site \(e.g., form submission attempts\) will be blocked. 
+* **If the visitor is a human, the web browser will receive Reblaze’s authenticating cookies.** Subsequent ****actions by the visitor within the site will include the cookies**,** and the visitor will not be challenged anymore. 
 
