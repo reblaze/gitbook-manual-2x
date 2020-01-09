@@ -74,7 +74,7 @@ If you wish to turn off Active Challenges, do the following.
 Turning off Active Challenges will disable the direct blocking of bots \(where a requestor is blocked merely for being identified as a bot\). However, automated traffic will still be excluded via all other relevant means. 
 {% endhint %}
 
-If you merely removed the Deny Bot ACL Policy from the relevant Profiles, then bots will still be excluded by the other active [ACL Policies](../../product-walkthrough/security/profiles/acl-policies.md), [Dynamic Rules](../../product-walkthrough/security/dynamic-rules.md), [content filtering](../how-do-i.../filter-by-content.md), and so on. If instead you added an "Allow" ACL Policy to specific requestors, then other ACL Policies will not block those requestors; they will be exempted from ACL Policy filtering.
+If you merely remove the Deny Bot ACL Policy from the relevant Profiles, then bots will still be excluded by the other active [ACL Policies](../../product-walkthrough/security/profiles/acl-policies.md), [Dynamic Rules](../../product-walkthrough/security/dynamic-rules.md), [content filtering](../how-do-i.../filter-by-content.md), and so on. If instead you added an "Allow" ACL Policy to specific requestors, then other ACL Policies will not block those requestors; they will be exempted from ACL Policy filtering.
 
 {% hint style="danger" %}
 **If you have not enabled Passive Challenges** \(and successfully tested them\), disabling Active Challenges is not recommended.
