@@ -16,7 +16,7 @@ This section answers questions that often arise about using Reblaze.
 
 {% page-ref page="quickly-blocking-an-attacker.md" %}
 
+{% page-ref page="secure-traffic-from-a-third-party-page.md" %}
+
 {% page-ref page="set-rate-limits.md" %}
-
-
 
