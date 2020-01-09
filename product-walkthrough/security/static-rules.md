@@ -42,7 +42,7 @@ The Timeout settings allow Reblaze to block unresponsive requestors, whether the
 | :--- | :--- |
 | **Header Timeout** | How long to wait for the client to send a request header. |
 | **Body Timeout** | If the body is not obtained in one read-step, this timeout begins.  If the timeout expires and the client has still sent nothing, the Reblaze Gateway returns error 'Request time out \(408\)'. |
-| **Keep Alive Timeout** | The timeout for keep-alive connections with the client. The Reblaze Gateway will close connections after this time. This setting increases server efficiency; it allows the server to re-use browser connections and save resources.   |
+| **Keep Alive Timeout** | The timeout for keep-alive connections with the client. The Reblaze Gateway will close connections after this time. This setting increases server efficiency; it allows the server to re-use browser connections and save resources. When changing this value, special care should be taken; in some cases, it depends on specific cloud vendor and load balancer settings.   |
 | **Send Timeout**  | Specifies the response timeout to the client. This timeout does not apply to the entire transfer but, rather, only between two subsequent client-read operations. Thus, if the client has not read any data for this amount of time, the Reblaze Gateway shuts down the connection. |
 
 All times are specified in seconds, as shown in the example below. 
