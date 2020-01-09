@@ -40,6 +40,7 @@
   * [Using the Reblaze Query Box](using-the-product/best-practices/reblaze-filter.md)
   * [Understanding and Diagnosing Traffic Issues](using-the-product/best-practices/dealing-with-false-positive.md)
 * [How Do I...](using-the-product/how-do-i.../README.md)
+  * [Secure Traffic from a Third-Party Page](using-the-product/how-do-i.../secure-traffic-from-a-third-party-page.md)
   * [Ban, Unban, and Whitelist Traffic Sources](using-the-product/how-do-i.../ban-unban-and-whitelist-traffic-sources.md)
   * [Bypass Rate Limits for Loadtesting](using-the-product/how-do-i.../bypassing-rate-limits-for-loadtesting.md)
   * [Control Caching Behavior](using-the-product/how-do-i.../cache-modes.md)
