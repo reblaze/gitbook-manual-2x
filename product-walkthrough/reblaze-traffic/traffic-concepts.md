@@ -29,6 +29,13 @@ The discussion below is for sites and web applications.
 
 ## The Challenge Process
 
+Most of the Reblaze interface focuses on configuration for:
+
+* The detection and mitigation of hostile requests.
+* The detection and mitigation of hostile behavior of requestors.
+
+The challenge process is built into Reblaze, and provides a third approach to security. It mitigates threats based on the requestors' identities and environments.
+
 When Reblaze receives the first request from a previously unknown traffic source \(below described as the "user"\), this is the typical process that is followed.
 
 1. **Reblaze challenges the user's browsing environment.** Reblaze uses a variety of proprietary, multi-faceted techniques to verify that this requestor is a human using a browser, instead of a bot using a headless browser or emulator. \(This topic is discussed in some depth in this white paper: [2019 State of Bot Protection](https://www.reblaze.com/resources/white-papers/2019-state-bot-protection/).\)
