@@ -2,7 +2,7 @@
 
 * [Reblaze Portal](README.md)
 * [Introduction to Reblaze](introduction-to-reblaze.md)
-* [Starting with Reblaze](quick-start-guide.md)
+* [Getting Started](quick-start-guide.md)
 
 ## Console UI Walkthrough <a id="product-walkthrough"></a>
 

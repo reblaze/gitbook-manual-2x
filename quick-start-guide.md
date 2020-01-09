@@ -2,7 +2,7 @@
 description: A quick-start guide
 ---
 
-# Starting with Reblaze
+# Getting Started
 
 ## **Welcome to Reblaze!** 
 
@@ -14,7 +14,7 @@ Reblaze's support team is always available to assist you. At any step of this pr
 
 The flowchart below describes the process we are about to begin: 
 
-![](https://documents.lucidchart.com/documents/b2f137f7-4a41-4f86-b564-c6dd9c4f1cd5/pages/0_0?a=507&x=549&y=124&w=682&h=1232&store=1&accept=image%2F*&auth=LCA%2060d2e4abcbb56931a1063bea11fd6cd8b2599ab3-ts%3D1575820248)
+![](.gitbook/assets/getting-started-with-reblaze-flowchart.png)
 
 ## **Login**
 
@@ -44,7 +44,7 @@ The Reblaze interface does not offer the ability to create a new site or applica
 
 Once you choose the right domain for your new application, you'll be redirected automatically to the Web Proxy screen, where configurations are made on the selected application. 
 
-There are two settings you'll have to configure, and a third that's optional:
+There are two settings to configure, and a third that's optional:
 
 1. Set the IP address of your servers under "Host". 
 
