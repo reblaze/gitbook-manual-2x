@@ -34,7 +34,7 @@ Most of the Reblaze interface focuses on configuration for:
 * The detection and mitigation of hostile requests.
 * The detection and mitigation of hostile behavior of requestors.
 
-The challenge process is built into Reblaze, and provides a third approach to security. It mitigates threats based on the requestors' identities and environments.
+The challenge process is different. It is built into Reblaze, and provides a third approach to security. It mitigates threats based on the requestor's identity and environment.
 
 When Reblaze receives the first request from a previously unknown traffic source \(below described as the "user"\), this is the typical process that is followed.
 
