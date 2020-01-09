@@ -32,7 +32,7 @@ The discussion below is for sites and web applications.
 When Reblaze receives the first request from a previously unknown traffic source \(below described as the "user"\), this is the typical process that is followed.
 
 1. **Reblaze challenges the user's browsing environment.** Reblaze uses a variety of proprietary, multi-faceted techniques to verify that this requestor is a human using a browser, instead of a bot using a headless browser or emulator. \(This topic is discussed in some depth in this white paper: [2019 State of Bot Protection](https://www.reblaze.com/resources/white-papers/2019-state-bot-protection/).\)
-2. **If the challenge is not passed, the request is suspected to be a bot, and another challenge is issued.** This process continues until a challenge is passed, or a rejection threshold is reached \(e.g., a Dynamic Rule or Rate Limit\). 
+2. **If the challenge is not passed, the request is suspected to be a bot, and another challenge is issued.** This process continues until a challenge is passed, or a threshold is reached \(e.g., via a Dynamic Rule\) to ban the requestor. 
 3. **If the challenge is passed, the browser's session is authenticated**, and the browser receives cookies from Reblaze.
 4. **The browser then automatically resubmits the original request**, but this time, the cookies are included. The user is granted access to the requested URL, resources, etc.
 5. **Subsequent requests will also include the cookies,** and thus, they are not challenged.
@@ -97,14 +97,14 @@ The process described on this page is the **active** challenge process. Out of t
 Passive challenges have three primary benefits:
 
 * **They enable Biometric Bot Detection**: a much more powerful means of identifying automated traffic, and an important part of Reblaze's behavioral analysis.
-* **In some situations, active challenges can interfere with certain metrics** such as those provided by Google Analytics. Passive challenges can replace active challenges, restoring analytics metrics while still enjoying effective bot protection. 
+* **In some situations, active challenges can interfere with certain metrics** such as those provided by Google Analytics. \(The initial referrer information is lost.\) If this is a problem, active challenges can be disabled. In this situation, passive challenges can provide effective bot protection instead. 
 * **When caching is being done by a CDN**, active challenges will not occur for pages being served from the cache. Passive challenges are necessary for Reblaze to perform bot detection in this situation.
 
 {% hint style="info" %}
 **If possible, we recommend that customers use both active and passive challenges.**
 {% endhint %}
 
-To learn more about passive challenges, go here: [Enabling passive challanges ](../../using-the-product/best-practices/enabling-passive-challenges.md)
+To learn more about passive challenges, go here: [Enabling passive challenges. ](../../using-the-product/best-practices/enabling-passive-challenges.md)
 
 
 

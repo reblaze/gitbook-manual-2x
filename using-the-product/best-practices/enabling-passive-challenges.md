@@ -4,7 +4,7 @@ As described in [Traffic Concepts](../../product-walkthrough/reblaze-traffic/tra
 
 Active Challenges work well, but an even better option is **Passive Challenges**. 
 
-* Active Challenges temporarily redirect the user's browser. This can affect site metrics gathered by products such as Google Analytics. Passive Challenges are simple pieces of Javascript. They do not redirect the user's browser; they merely ask it to solve a challenge, and then insert the Reblaze cookies.
+* Active Challenges temporarily redirect the user's browser. This can affect site metrics gathered by products such as Google Analytics. \(Specifically, the initial referrer information is lost.\) Passive Challenges are simple pieces of Javascript. They do not redirect the user's browser; they merely ask it to solve a challenge, and then insert the Reblaze cookies.
 * Active Challenges will not occur when site content is served from a CDN. Passive Challenges can still detect bots in this situation.
 
 Most importantly, Passive Challenges allow Reblaze to use **Biometric Bot Detection**—an advanced and sophisticated means of distinguishing humans from automated traffic sources.
@@ -35,7 +35,7 @@ The code snippet can go into the header or at the end of the page. **The best pr
 **Most customers set up the code snippet as a tag within their tag manager.** This makes it simple to install it instantly across their entire site/application.
 {% endhint %}
 
-If desired, the script code can include `async` or `defer` attributes:
+If desired, the script code can include `async` and/or `defer` attributes:
 
 ```text
 <script async src="/c3650cdf-216a-4ba2-80b0-9d6c540b105e58d2670b-ea0f-484e-b88c-0e2c1499ec9bd71e4b42-8570-44e3-89b6-845326fa43b6" type="text/javascript"></script>
@@ -55,7 +55,7 @@ To test the implementation, use a browser to visit a page containing the Javascr
 
 There are two primary situations where customers sometimes want to disable Active Challenges:
 
-* **When a customer needs site analytics** to correctly reflect all referrers and so on. \(Active Challenges can interfere with this.\)
+* **When a customer needs site analytics** to correctly reflect all referrers. \(Active Challenges can interfere with this.\)
 * **For API endpoints**. Active Challenges are designed to verify the client's browser environment; for most API calls, there is no browser environment to verify. \(For users of our [Mobile SDK](../reblaze-api-1/mobile-sdk.md), this is not a problem. They can still use active challenges for these endpoints.\)
 
 Other than those situations, Active Challenges can be very beneficial.

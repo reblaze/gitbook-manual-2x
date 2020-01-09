@@ -22,6 +22,10 @@ To add a new Policy, select the desired Policy from the Link More Policies list 
 Note that every Profile **must include one, and only one,** [WAF/IPS Policy](waf-ips-policies.md).
 {% endhint %}
 
+{% hint style="info" %}
+**Within a Profile, the order of Policies does not matter.** When evaluating an incoming request, Reblaze combines the Bypass, Allow, and Deny Rules from all the ACL Policies in the Profile. It evaluates all the Bypass Rules first, then all the Allow Rules, then the Deny Rules.
+{% endhint %}
+
 Most Profile administration will not be possible until the appropriate Policies have been created. Similarly, complete Policy administration will not be possible until there are Rules to add to them.
 
 {% embed url="https://youtu.be/IDwNqandLhU" %}
