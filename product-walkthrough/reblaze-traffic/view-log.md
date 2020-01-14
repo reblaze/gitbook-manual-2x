@@ -93,7 +93,7 @@ How to search for one IP \(censored in the screenshot below\), only showing requ
 
 Using this regex syntax: 
 
-`status:[4]\d\d`
+`status:[45]\d\d`
 
 Provides all status codes for 4xx. 
 
