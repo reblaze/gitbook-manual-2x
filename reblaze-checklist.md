@@ -37,8 +37,8 @@ Before going through the checklists below, you should already have performed the
     </tr>
     <tr>
       <td style="text-align:left">Rate Limits</td>
-      <td style="text-align:left">Verify that you&apos;re not using any Rate Limit rules that apply to Reblaze
-        IPs.</td>
+      <td style="text-align:left">Verify that you&apos;re not using any Rate Limit/QOS rules that apply
+        to Reblaze IPs.</td>
       <td style="text-align:left">This avoids potential blacklisting of Reblaze, and other availability
         issues. (If Rate Limits are applied, Reblaze can be misidentified as a
         DDoS source.)</td>
