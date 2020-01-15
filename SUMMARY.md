@@ -3,6 +3,7 @@
 * [Reblaze Portal](README.md)
 * [Introduction to Reblaze](introduction-to-reblaze.md)
 * [Getting Started](quick-start-guide.md)
+* [Reblaze Setup Checklists](reblaze-checklist.md)
 
 ## Console UI Walkthrough <a id="product-walkthrough"></a>
 

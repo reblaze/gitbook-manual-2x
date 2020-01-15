@@ -68,5 +68,7 @@ Example **Profiles**:
 
 \*\* _"Allow" Policies are evaluated before "Deny" Policies. When a match is found, no further evaluation is performed. In this example, company users will be Allowed, which exempts them from the Policy which Denies all requests_.
 
-Note that while Profiles are defined in this section of the Reblaze UI, they are assigned to specific resources in the [Web Proxy -&gt; Security Profiles](../../settings/web-proxy/security-profiles.md#assigning-a-security-profile-to-a-location) section. 
+{% hint style="info" %}
+Note that while Profiles are defined in this section of the Reblaze UI, **they are assigned to specific resources/locations in the** [**Web Proxy -&gt; Security Profiles**](../../settings/web-proxy/security-profiles.md#assigning-a-security-profile-to-a-location) **section.** 
+{% endhint %}
 
