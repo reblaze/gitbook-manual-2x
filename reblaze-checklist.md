@@ -211,7 +211,8 @@ Note: by default, **Reblaze is deployed in** [**Report mode**](product-walkthrou
         traffic scrubbing, <a href="product-walkthrough/settings/web-proxy/security-profiles.md#enabling-report-only-mode">move your application(s) from Report mode to Active mode</a>.</td>
       <td
       style="text-align:left">Reblaze&apos;s logs are a rich source of insights into incoming traffic.
-        Highly recommended reading: <a href="using-the-product/best-practices/dealing-with-false-positive.md">Understanding and Diagnosing Traffic Issues</a>.</td>
+        Highly recommended reading: <a href="using-the-product/best-practices/dealing-with-false-positive.md">Understanding and Diagnosing Traffic Issues. </a>
+        </td>
     </tr>
   </tbody>
 </table>
