@@ -14,7 +14,7 @@ Reblaze's support team is always available to assist you. At any step of this pr
 
 The flowchart below describes the process we are about to begin: 
 
-![](.gitbook/assets/getting-started-with-reblaze-flowchart.png)
+![](.gitbook/assets/getting-started-with-reblaze-flowchart%20%281%29.png)
 
 ## **Login**
 
